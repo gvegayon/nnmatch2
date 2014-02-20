@@ -33,6 +33,17 @@ using parallel computing, allows improving speed up to x 10. Its implementation 
 in a beta status.
 {p_end}
 
+{title:Examples}
+
+use ldw_exper, clear
+
+// One match
+timer on 1
+nnmatch2 re78 t age educ black hisp married re74 re75 u74 u75 , m(1) bias(bias) /*save(prueba)*/
+timer off 1
+
+timer on 2
+nnmatch  re78 t age educ black hisp married re74 re75 u74 u75 , m(1) bias(bias)
 
 {title:Author}
 
@@ -40,5 +51,4 @@ in a beta status.
 George Vega Yon, Superindentencia de Pensiones. {browse "mailto:gvega@spensiones.cl"}
 Eduardo Fajnzylber Reyes, Universidad Adolfo Ib{c a'}{c n~}ez. {browse "mailto:eduardo.fajnzylber@uai.cl"}
 {p_end}
-
 
