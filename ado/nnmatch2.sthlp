@@ -39,7 +39,7 @@ use ldw_exper, clear
 
 // One match
 timer on 1
-nnmatch2 re78 t age educ black hisp married re74 re75 u74 u75 , m(1) bias(bias) /*save(prueba)*/
+nnmatch2 re78 t age educ black hisp married re74 re75 u74 u75 , m(1) bias(bias) 
 timer off 1
 
 timer on 2
