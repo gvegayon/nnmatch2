@@ -35,7 +35,7 @@ in a beta status.
 
 {title:Examples}
 
-use ldw_exper, clear
+sysuse ldw_exper, clear
 
 // One match
 timer on 1
