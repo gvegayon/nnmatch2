@@ -318,7 +318,7 @@ end
 // General purpose matching in covariates.
 // nn_match accepts single or multiple covariates as matching in one or more
 // neighbours.
-cap mata: mata drop nn_match()
+// cap mata: mata drop nn_match()
 mata:
 real matrix nn_match(
 	real colvector Yi,
@@ -370,11 +370,11 @@ real matrix nn_match(
 	// Covariates
 	Xl1 = X[ids_t,.]
 	Xl0 = X[ids_c,.]
-	
-	(*xmatch) = J(N*(max((N0,N1)-1)),1,(*xmatch))
+
+	(*xmatch) = J(N*(max((N0,N1))-1),1,(*xmatch))
 	nmatchtot = 0
 	outcols = 5 + nvars*2 // cols((*xmatch))
-	
+
 	for(i=1;i<=N;i++) {
 		// Starting values for i-th match
 		if (!W[i]) {
@@ -444,7 +444,7 @@ end
 // It assumes that Xi vector is control/treated individual and every row in Xl
 // is treated/control individual respectively.
 // EF: returns a matrix with the distances in the first column and the Y values in the second
-cap mata: mata drop calc_distances()
+// cap mata: mata drop calc_distances()
 mata:
 real matrix calc_distances(
 	real matrix Xl,

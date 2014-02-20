@@ -44,6 +44,9 @@ timer off 1
 
 timer on 2
 nnmatch  re78 t age educ black hisp married re74 re75 u74 u75 , m(1) bias(bias)
+timer off 2
+
+timer list
 
 {title:Author}
 
