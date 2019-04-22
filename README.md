@@ -3,12 +3,11 @@
 This new implementation of `nnmatch` for Stata is faster than the current `nnmatch` available on SSC.
 The module is still on development.
 
-For more projects like this please take a look at http://www.its.caltech.edu/~gvegayon
+For more projects like this please take a look at https:/ggvy.cl
 
 ## Install
 
-The ado file hasn't been prepared yet, but you can try it by downloading the file `nnmatch2.do`,
-and executing it on your stat session.
+The ado file hasn't been prepared yet, but you can try it by downloading the files in [ado/] and copying it into your personal ado path.
 
 ## Authors
 
