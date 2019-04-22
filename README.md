@@ -3,7 +3,7 @@
 This new implementation of `nnmatch` for Stata is faster than the current `nnmatch` available on SSC.
 The module is still on development.
 
-For more projects like this please take a look at https:/ggvy.cl
+For more projects like this please take a look at https://ggvy.cl
 
 ## Install
 
